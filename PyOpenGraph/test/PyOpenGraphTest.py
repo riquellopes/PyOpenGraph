@@ -56,7 +56,7 @@ class PyOpenGraph(unittest.TestCase):
 		"""
 			Case player does'n use prefix og at head, the lib should be process with beautiful soup.
 		"""
-		og = o.PyOpenGraph('http://www.hotelurbano.com/pacote/rio-de-janeiro-angra-dos-reis-melia-angra/48795')
+		og = o.PyOpenGraph('http://www.hotelurbano.com/pacote/rio-de-janeiro-angra-dos-reis-melia-angra/48795', prefix=False)
 		assert_equals(og.metadata['title'], 'Angra dos Reis, Meliá Angra, 7x de R$ 60,00')
 		assert_equals(og.metadata['type'], 'website')
 		assert_equals(og.metadata['site_name'], 'hotelurbano.com')

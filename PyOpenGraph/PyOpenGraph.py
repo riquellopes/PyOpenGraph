@@ -30,25 +30,26 @@ OPENGRAPH_NAMESPACES = [
 ]
 
 class PyOpenGraph(object):
-
-    def __init__(self, url=None, xml=None):
-        self.url = url
-        parser = rdfadict.RdfaParser()
-        if not xml:
-            result = parser.parse_url(url)
-        else:
-            result = parser.parse_string(xml, url)
-        data = result[url]
-        self.metadata = self.get_properties(data)
-
-    def get_properties(self, data):
-        content = {}
-        for k, v in data.iteritems():
-            for ns in OPENGRAPH_NAMESPACES:
-                if k.startswith(ns) and len(v)>0:
-                    content[k.replace(ns, '')] = v[0]
-        return self._reprocess_content(content)
 	
-    def _reprocess_content(self, content):
-	if len(content):
-	    return content
+	def __init__(self, url=None, xml=None, prefix=True):
+		if prefix:
+			parser = rdfadict.RdfaParser()
+			if not xml:
+				result = parser.parse_url(url)
+			else:
+				result = parser.parse_string(xml, url)
+		else:
+			result = self._parse_web(url)
+		data = result[url]
+		self.metadata = self.get_properties(data)
+	
+	def get_properties(self, data):
+		content = {}
+		for k, v in data.iteritems():
+			for ns in OPENGRAPH_NAMESPACES:
+				if k.startswith(ns) and len(v)>0:
+					content[k.replace(ns, '')] = v[0]
+		return content
+	
+	def _parse_web(self, url):
+		return {url:None}
