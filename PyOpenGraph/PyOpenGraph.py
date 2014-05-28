@@ -30,8 +30,9 @@ OPENGRAPH_NAMESPACES = [
 ]
 
 class PyOpenGraph(object):
-   
+
     def __init__(self, url=None, xml=None):
+        self.url = url
         parser = rdfadict.RdfaParser()
         if not xml:
             result = parser.parse_url(url)
@@ -46,12 +47,8 @@ class PyOpenGraph(object):
             for ns in OPENGRAPH_NAMESPACES:
                 if k.startswith(ns) and len(v)>0:
                     content[k.replace(ns, '')] = v[0]
-        return content
-    
-    def __str__(self):
-        return self.metadata['title']
-
-if __name__ == '__main__':
-    # Usage
-    og = PyOpenGraph('http://www.zappos.com/timberland-pro-titan-safety-toe-oxford')
-    print og.metadata
+        return self._reprocess_content(content)
+	
+    def _reprocess_content(self, content):
+	if len(content):
+	    return content

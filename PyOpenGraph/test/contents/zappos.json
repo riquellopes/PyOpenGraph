@@ -1,0 +1,33 @@
+{
+    "http://www.zappos.com/timberland-pro-titan-safety-toe-oxford": {
+        "http://opengraphprotocol.org/schema/video": [
+            "http://www.zappos.com/media/video/flvplayer/flvplayer-70110.swf?wmode=opaque&allowfullscreen=true&allowscriptaccess=always&stageW=480&stageH=281&showPreviewImage=false&videoUrl=http://www.zappos.com/media/video/7/2/4/7246644.flv&progressBarColor=#7399C6&rollOverColor=#7399C6&autoPlays=true"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#icon": [
+            "http://www.zappos.com/favicon.ico"
+        ], 
+        "http://opengraphprotocol.org/schema/type": [
+            "product"
+        ], 
+        "http://www.facebook.com/2008/fbmlapp_id": [
+            "2357918308"
+        ], 
+        "http://opengraphprotocol.org/schema/image": [
+            "http://www.zappos.com/images/724/7246644/985-269904-d.jpg"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#stylesheet": [
+            "http://www.zappos.com/prd/styles/facelift.p.20140514104429.css", 
+            "http://www.zappos.com/prd/css/print.20140423085117.css", 
+            "http://www.zappos.com/prd/styles/main.p.20140423085300.css"
+        ], 
+        "http://opengraphprotocol.org/schema/url": [
+            "http://www.zappos.com/timberland-pro-titan-safety-toe-oxford"
+        ], 
+        "http://opengraphprotocol.org/schema/site_name": [
+            "Zappos.com"
+        ], 
+        "http://opengraphprotocol.org/schema/title": [
+            "Timberland PRO TiTAN\u00ae Safety Toe Oxford"
+        ]
+    }
+}

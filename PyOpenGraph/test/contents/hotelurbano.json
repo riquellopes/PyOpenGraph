@@ -1,0 +1,21 @@
+{
+    "http://www.hotelurbano.com/pacote/rio-de-janeiro-angra-dos-reis-melia-angra/48795": {
+        "http://www.w3.org/1999/xhtml/vocab#stylesheet": [
+            "http://cdn.hotelurbano.com/css/sprites/sprite-forma-pgto__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/all__1401127930.css", 
+            "http://cdn.hotelurbano.com/css/reset__1401127928.css", 
+            "http://cdn.hotelurbano.com/css/style__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/jquery-ui.min__1401127930.css", 
+            "http://cdn.hotelurbano.com/css/malert__1401127930.css", 
+            "http://cdn.hotelurbano.com/css/ill-reset__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/sprites/sprite-principal__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/autocomplete2__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/lightbox__1401127930.css", 
+            "http://cdn.hotelurbano.com/css/biblioteca__1401127929.css", 
+            "http://cdn.hotelurbano.com/css/calendario-hoteis__1401127930.css"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#icon": [
+            "http://www.hotelurbano.com/favicon4.ico"
+        ]
+    }
+}

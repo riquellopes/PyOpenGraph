@@ -1,0 +1,133 @@
+{
+    "umhpppVR28": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ]
+    }, 
+    "umhpppVR26": {
+        "http://rdf.data-vocabulary.org/#title": [
+            "Rio de Janeiro"
+        ], 
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ], 
+        "http://rdf.data-vocabulary.org/#url": [
+            "http://www.booking.com/city/br/rio-de-janeiro.pt-br.html"
+        ]
+    }, 
+    "umhpppVR27": {
+        "http://rdf.data-vocabulary.org/#title": [
+            "Ipanema"
+        ], 
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ], 
+        "http://rdf.data-vocabulary.org/#url": [
+            "http://www.booking.com/district/br/rio-de-janeiro/ipanema.pt-br.html"
+        ]
+    }, 
+    "umhpppVR24": {
+        "http://rdf.data-vocabulary.org/#title": [
+            "BR"
+        ], 
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ], 
+        "http://rdf.data-vocabulary.org/#url": [
+            "http://www.booking.com/country/br.pt-br.html"
+        ]
+    }, 
+    "umhpppVR25": {
+        "http://rdf.data-vocabulary.org/#title": [
+            "Rio de Janeiro"
+        ], 
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ], 
+        "http://rdf.data-vocabulary.org/#url": [
+            "http://www.booking.com/region/br/rio-de-janeiro.pt-br.html"
+        ]
+    }, 
+    "umhpppVR23": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            "http://rdf.data-vocabulary.org/#Breadcrumb"
+        ]
+    }, 
+    "http://www.booking.com/hotel/br/best-western-sol-ipanema.pt-br.html": {
+        "http://www.w3.org/1999/xhtml/vocab#alternate": [
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.pt-br.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.lv.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.el.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.vi.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.bg.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.et.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.sv.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.th.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ca.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.sk.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.fr.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ja.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.de.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.id.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.sl.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.fi.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ro.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.no.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.sr.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.hr.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ru.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.pl.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.nl.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.is.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ms.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ko.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.en-gb.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.zh-tw.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.it.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.hu.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.tl.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.he.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.pt-pt.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.uk.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.cs.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.es.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.ar.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.da.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.zh-cn.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.lt.html", 
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.tr.html"
+        ], 
+        "http://opengraphprotocol.org/schema/description": [
+            "O Best Western Plus Sol Ipanema oferece uma localiza\u00e7\u00e3o excelente em frente \u00e0 Praia de Ipanema, em uma \u00e1rea animada repleta de bares e restaurantes."
+        ], 
+        "http://opengraphprotocol.org/schema/url": [
+            "http://www.booking.com/hotel/br/best-western-sol-ipanema.pt-br.html"
+        ], 
+        "http://opengraphprotocol.org/schema/image": [
+            "http://q-ec.bstatic.com/images/hotel/max300/252/25216239.jpg"
+        ], 
+        "http://opengraphprotocol.org/schema/type": [
+            "booking_com:hotel"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#stylesheet": [
+            "http://q-ec.bstatic.com/static/css/main_edgecast/6a85ab590af4b04e06bf83ef799467cb8004188c.css", 
+            "http://q-ec.bstatic.com/static/css/main_exps_edgecast/2da3060f29845ca3473745de3d5240825d875fc2.css", 
+            "http://q-ec.bstatic.com/static/css/popups_edgecast/bfd3379059eb247e7ee9bfe880796e8128ddc522.css", 
+            "http://r-ec.bstatic.com/static/css/hotel_edgecast/24fab22e3ef051a6962a40d7c5657e485da0192f.css", 
+            "http://q-ec.bstatic.com/static/css/generic_profile_edgecast/e7179b3e770a877d344a7a8aa3e48109da0adf18.css"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#icon": [
+            "http://r-ec.bstatic.com/static/img/b25logo/favicon/ebc77706da3aae4aee7b05dadf182390f0d26d11.ico"
+        ], 
+        "http://www.w3.org/1999/xhtml/vocab#help": [
+            "http://www.booking.com/faq.pt-br.html"
+        ], 
+        "http://opengraphprotocol.org/schema/site_name": [
+            "Booking.com"
+        ], 
+        "http://opengraphprotocol.org/schema/title": [
+            "Best Western Plus Sol Ipanema Hotel, Rio de Janeiro, BR"
+        ]
+    }
+}
