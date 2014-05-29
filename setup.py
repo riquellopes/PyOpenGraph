@@ -43,7 +43,7 @@ setup(
     platforms = 'Any',
     license = 'MIT License',
     long_description=__doc__,
-	install_requires=['rdfadict', 'beautifulsoup4==4.3.2', ]
+	install_requires=['rdfadict', 'beautifulsoup4==4.3.2', ],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Console',
