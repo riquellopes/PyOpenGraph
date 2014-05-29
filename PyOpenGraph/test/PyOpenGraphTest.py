@@ -13,13 +13,15 @@ class MockResponse(object):
 		self.msg = msg
 		self.headers = headers
 		
-	def parse_url(self, *arg):
-		handle = open(self.file_test)
-		html = "".join( handle )
-		if self._type == 'json':
-			import json
-			return json.loads(html)
-		return html
+	def __getattr__(self, *args):
+		def func(*args):
+			handle = open(self.file_test)
+			html = "".join( handle )
+			if self._type == 'json':
+				import json
+				return json.loads(html)
+			return html
+		return func
 	
 	def parse_string(self, *arg):
 		pass
@@ -52,12 +54,16 @@ class PyOpenGraph(unittest.TestCase):
 		assert_equals(og.metadata['site_name'], 'Booking.com')
 	
 	@patch('PyOpenGraph.PyOpenGraph.rdfadict.RdfaParser')
-	def test_case_player_does_n_use_prefix_og_at_head_the_lib_should_be_process_with_beaut_soap(self, p):
+	@patch('PyOpenGraph.PyOpenGraph.urllib2.urlopen')
+	def test_case_player_does_n_use_prefix_og_at_head_the_lib_should_be_process_with_beaut_soap(self, u, p):
 		"""
-			Case player does'n use prefix og at head, the lib should be process with beautiful soup.
+			Case player doest'n use prefix og at head, the lib should be process with beautiful soup.
 		"""
+		p.return_value = MockResponse('contents/hotelurbano', _type='json', headers={'content-type': 'text/javascript;  charset=utf-8'})
+		u.return_value = MockResponse('contents/hotelurbano')
+		
 		og = o.PyOpenGraph('http://www.hotelurbano.com/pacote/rio-de-janeiro-angra-dos-reis-melia-angra/48795', prefix=False)
-		assert_equals(og.metadata['title'], 'Angra dos Reis, Meliá Angra, 7x de R$ 60,00')
+		assert_equals(og.metadata['title'], u'Angra dos Reis, Meliá Angra, 6x de R$ 70,00')
 		assert_equals(og.metadata['type'], 'website')
 		assert_equals(og.metadata['site_name'], 'hotelurbano.com')
 		assert_equals(og.metadata['url'], 'http://www.hotelurbano.com/pacote/rio-de-janeiro-angra-dos-reis-melia-angra/48795?cmp=895')

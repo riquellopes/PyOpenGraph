@@ -21,7 +21,10 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 #THE SOFTWARE.
 
+import re
 import rdfadict
+import urllib2
+from bs4 import BeautifulSoup
 
 OPENGRAPH_NAMESPACES = [
   "http://opengraphprotocol.org/schema",
@@ -52,4 +55,8 @@ class PyOpenGraph(object):
 		return content
 	
 	def _parse_web(self, url):
-		return {url:None}
+		soup = BeautifulSoup( urllib2.urlopen(url).read() )
+		content = {} 
+		for og in soup.findAll('meta', {'property':re.compile('og:')}):
+			content["{0}/{1}".format(OPENGRAPH_NAMESPACES[0], og['property'].split(':')[1])] = [ og['content'] ]
+		return {url:content}
